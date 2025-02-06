@@ -2,19 +2,19 @@
 particlesJS('particles', {
     particles: {
         number: {
-            value: 100, // Increase the number of particles
+            value: 100,
             density: {
                 enable: true,
-                value_area: 1000 // Increase the density
+                value_area: 1000
             }
         },
         color: {
             value: '#c89efc'
         },
         shape: {
-            type: 'star', // Change the shape of the particles
+            type: 'star',
             stroke: {
-                width: 0, // Remove the stroke
+                width: 0,
                 color: '#000000'
             },
             polygon: {
@@ -22,17 +22,17 @@ particlesJS('particles', {
             },
         },
         opacity: {
-            value: 0.5, // Decrease the opacity
-            random: true, // Make the opacity random
+            value: 0.5,
+            random: true,
             anim: {
-                enable: true, // Enable opacity animation
+                enable: true,
                 speed: 1,
                 opacity_min: 0.1,
                 sync: false
             }
         },
         size: {
-            value: 3, // Increase the size of the particles
+            value: 3,
             random: true,
             anim: {
                 enable: true,
@@ -42,13 +42,13 @@ particlesJS('particles', {
             }
         },
         line_linked: {
-            enable: false, // Disable the lines between particles
+            enable: false,
         },
         move: {
             enable: true,
-            speed: 2, // Decrease the speed of the particles
+            speed: 2,
             direction: 'none',
-            random: true, // Make the movement of the particles random
+            random: true,
             straight: false,
             out_mode: 'out',
             attract: {
@@ -63,7 +63,7 @@ particlesJS('particles', {
         events: {
             onhover: {
                 enable: true,
-                mode: 'bubble' // Change the hover effect to 'bubble'
+                mode: 'bubble'
             },
             onclick: {
                 enable: true,
@@ -72,7 +72,7 @@ particlesJS('particles', {
             resize: true
         },
         modes: {
-            bubble: { // Add bubble effect settings
+            bubble: {
                 distance: 250,
                 size: 8,
                 duration: 2,
@@ -88,7 +88,7 @@ particlesJS('particles', {
 });
 
 function redirectToAsh() {
-    window.location.href = 'https://ash.ambrosial.fun';
+    window.location.href = 'https://ash.ambrosial.space';
 }
 
 const text = 'ambrosial';
@@ -100,11 +100,11 @@ function writeText() {
 
     if (index < text.length) {
         index++;
-        setTimeout(writeText, 100); // Call writeText every 100ms until the text is finished
+        setTimeout(writeText, 100);
     } else {
         typedText.classList.add('underline');
-        document.getElementById('cursor').style.display = 'none'; // Hide the cursor when the text is finished
+        document.getElementById('cursor').style.display = 'none';
     }
 }
 
-writeText(); // Start the typewriter effect
+writeText();
